@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Fetch eCFR</title></head>
+<body>
+<h1>Fetch eCFR XML</h1>
+<form action="/ecfr/fetch" method="post">
+    Title: <input type="number" name="title" required><br/>
+    Date: <input type="date" name="date" required><br/>
+    <button type="submit">Fetch</button>
+</form>
+</body>
+</html>

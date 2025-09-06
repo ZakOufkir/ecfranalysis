@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fetch Result</title>
+</head>
+<body>
+<h1>Document Fetched</h1>
+
+<p><b>Title:</b> <span th:text="${doc.title}"></span></p>
+<p><b>Date:</b> <span th:text="${doc.date}"></span></p>
+
+<h3>XML Content:</h3>
+<pre th:text="${doc.xmlContent}">No content</pre>
+
+</body>
+</html>
+

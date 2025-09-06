@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+        <html xmlns:th="http://www.thymeleaf.org">
+        <head><title>eCFR Analysis</title></head>
+<body>
+<h1>Analysis Results</h1>
+
+<h3>Word Count per Head</h3>
+<ul>
+    <li th:each="entry : ${results.wordCountPerHead}">
+        <b th:text="${entry.key}"></b>
+        <span th:text="${entry.value}"></span> words
+    </li>
+</ul>
+
+<h3>Checksum</h3>
+<p th:text="${results.checksum}"></p>
+
+<h3>Custom Metric: Number of Parts (DIV5)</h3>
+<p th:text="${results.partCount}"></p>
+
+</body>
+</html>
