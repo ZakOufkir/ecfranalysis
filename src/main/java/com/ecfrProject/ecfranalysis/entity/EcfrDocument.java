@@ -13,10 +13,8 @@ import java.time.LocalDate;
 public class EcfrDocument {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long title;
 
-    private int title;
 
     private LocalDate date;
 
@@ -27,11 +25,11 @@ public class EcfrDocument {
     // Constructors, getters, setters
     public EcfrDocument() {}
 
-    public EcfrDocument(int title, LocalDate date, String xmlContent) {
+    public EcfrDocument(Long title, LocalDate date, String xmlContent) {
         this.title = title;
         this.date = date;
         this.xmlContent = xmlContent;
     }
 
-    // getters/setters ...
+
 }

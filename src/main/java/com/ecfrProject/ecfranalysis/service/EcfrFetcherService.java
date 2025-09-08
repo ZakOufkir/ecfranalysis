@@ -20,7 +20,7 @@ public class EcfrFetcherService {
         this.repository = repository;
     }
 
-    public EcfrDocument fetchAndStore(int title, LocalDate date)
+    public EcfrDocument fetchAndStore(Long title, LocalDate date)
     {
 
         String url = String.format(
@@ -33,5 +33,7 @@ public class EcfrFetcherService {
         EcfrDocument doc = new EcfrDocument(title, date, xmlContent);
         return repository.save(doc);
     }
-}
 
+
+
+}

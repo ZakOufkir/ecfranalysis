@@ -38,7 +38,7 @@ public class EcfrViewController {
     // Process form submission
     @PostMapping("/fetch")
     public String fetchAndSave(
-            @RequestParam int title,
+            @RequestParam Long title,
             @RequestParam String date,
             Model model)
     {
@@ -73,5 +73,8 @@ public class EcfrViewController {
                 })
                 .orElse("view-document");
     }
+
+
+
 }
 
